@@ -1,0 +1,52 @@
+// font-family
+$font-family-heading: 'Montserrat', sans-serif;
+$font-family-text: 'Roboto', sans-serif;
+
+// font-size
+$base-font: 18px;
+$font-step: 3px;
+
+$font-size-normal: $base-font;
+$font-size-1up: $base-font + ($font-step) * 1;
+$font-size-2up: $base-font + ($font-step) * 2;
+
+
+$font-size-small: 13px;
+$font-size-smallMid: 14px;
+$font-size-superBig: 48px;
+
+// font-weight
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500; 
+$font-weight-bold: 600;
+$font-weight-bolder: 700; 
+
+// color
+$color-background-off-white: #f9f8fa;
+$color-background-white: #ffffff;
+$color-background-blue: #7a75f0;
+$color-border-grey: #DCE1ED;
+$color-border-red: #F57D60;
+$color-text-base: #151f3c;
+$color-text-white: #ffffff;
+$color-text-footer: #505565;
+$color-text-error: #ff0033;
+$color-text-header: #646771;
+$color-text-anchor: #649ee2;
+$color-text-header-mobile: #53526A;;
+$color-blog-subtext: #999999;
+$color-text-input: #222222;
+$color-text-placeholder: #B3B3B3;
+
+
+@mixin textFont {
+  font-family: $font-family-text;
+  font-size: $font-size-normal;
+  font-weight: $font-weight-normal;
+  color: $color-text-base;
+  
+  @media (max-width: 767px) {
+    font-size: $font-size-smallMid;
+  }
+}
